@@ -19,4 +19,4 @@ A brief description of your project.
 
 ## Usage
 Start the Flask server:
-python app.py
+python app.py# market-segmentation-model
