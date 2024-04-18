@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Segmentation Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Sets a modern font for the body text */
+            background-color: #f4f4f9; /* Light grey background for a subtle look */
+            margin: 40px; /* Adds some margin around the body content */
+            color: #333; /* Sets a darker color for the text for readability */
+        }
+        h1 {
+            color: #0056b3; /* Sets a blue color for the heading */
+            text-align: center; /* Centers the heading */
+        }
+        form {
+            background-color: white; /* White background for the form */
+            padding: 20px; /* Padding inside the form */
+            border-radius: 8px; /* Rounded corners for the form */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow around the form */
+            max-width: 300px; /* Limits the form width */
+            margin: auto; /* Centers the form horizontally */
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%; /* Makes inputs take full width of the form */
+            padding: 10px; /* Adds padding inside the inputs */
+            margin-top: 8px; /* Adds margin above each input */
+            border: 1px solid #ccc; /* Subtle border for inputs */
+            border-radius: 4px; /* Rounded corners for inputs */
+        }
+        input[type="submit"] {
+            background-color: #0056b3; /* Blue background for the submit button */
+            color: white; /* White text for the submit button */
+            font-size: 16px; /* Larger font size for the button */
+            border: none; /* Removes border from the button */
+            cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+        }
+        input[type="submit"]:hover {
+            background-color: #004494; /* Darker blue when hovering over button */
+        }
+    </style>
+</head>
+<body>
+    <h1>Market Segmentation Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br>
+        <label for="income">Income:</label>
+        <input type="text" id="income" name="income"><br>
+        <label for="spending_score">Spending Score:</label>
+        <input type="text" id="spending_score" name="spending_score"><br>
+        <input type="submit" value="Predict Cluster">
+    </form>
+</body>
+</html>
